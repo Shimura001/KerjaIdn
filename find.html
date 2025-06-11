@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cari Loker - KerjaInd</title>
+  <link rel="stylesheet" href="style2.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="navbar-container">
+      <div class="navbar-brand">
+        <img src="logokerjaind.png" alt="Logo" class="logo" />
+        <h1><span class="gradient-text">Kerja</span>Ind</h1>
+      </div>
+      
+        <button class="burger" id="burger">&#9776;</button>
+        <nav class="nav-links desktop" class="nav-links" id="navLinks">
+          <a href="index.html" class="nav-link">Beranda</a>
+          <a href="find.html" class="nav-link active">Cari Loker</a>
+          <a href="gallery.html" class="nav-link">Galeri Perusahaan</a>
+          <a href="profile.html" class="nav-link">Profil Tim</a>
+        </nav>
+      
+    </div>
+      
+  </header>
+
+  <section class="hero">
+    <h1 >Cari<span class="gradient-text"> Loker</span></h1>
+  </section>
+  
+  <!-- Search Bar -->
+  <section class="search-bar">
+  <div class="search-container">
+        <form class="search-form" onsubmit="return false;">
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Cari pekerjaan atau kata kunci"
+            onkeyup="filterJobs()"
+        />
+        <button type="button" onclick="filterJobs()">Cari</button>
+        </form>
+   </div>
+   </section>
+
+
+
+  <!-- Job Listings -->
+  <section class="job-section">
+    <div class="job-list">
+      <div class="job-card">
+                <h3>Software Engineer</h3>
+                <div class="job-meta">
+                    <span>PT Gojek Indonesia</span>
+                    <span class="remote-tag">Remote</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Mengembangkan aplikasi mobile dan web menggunakan teknologi terkini. Dibutuhkan pengalaman Java, Python, atau Go. Lokasi Jakarta.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Sales Marketing</h3>
+                <div class="job-meta">
+                    <span>PT Astra International</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menangani penjualan produk otomotif dan membangun hubungan dengan klien. Pengalaman sales minimal 2 tahun.</p>
+                <a href="https://id.jobstreet.com/id/sales-marketing-jakarta-jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Graphic Designer</h3>
+                <div class="job-meta">
+                    <span>PT Tokopedia</span>
+                    <span class="onsite-tag">On-site</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Membuat desain kreatif untuk keperluan marketing digital. Menguasai Adobe Creative Suite dan Figma.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Data Analyst</h3>
+                <div class="job-meta">
+                    <span>PT Bank Central Asia</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menganalisis data untuk mendukung keputusan bisnis. Pengalaman dengan SQL, Python, dan Excel yang mahir.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Customer Service Representative</h3>
+                <div class="job-meta">
+                    <span>PT Telkom Indonesia</span>
+                    <span class="remote-tag">Remote</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menangani keluhan dan pertanyaan pelanggan melalui telepon dan chat. Kemampuan komunikasi yang baik diperlukan.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Digital Marketing Specialist</h3>
+                <div class="job-meta">
+                    <span>PT Shopee</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Mengelola kampanye digital marketing dan social media. Pengalaman dengan Google Ads dan Facebook Ads Manager.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Human Resources Manager</h3>
+                <div class="job-meta">
+                    <span>PT Unilever Indonesia</span>
+                    <span class="onsite-tag">On-site</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Mengelola strategi SDM dan rekrutment karyawan. Pengalaman minimal 5 tahun di bidang HR diperlukan.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Accounting Staff</h3>
+                <div class="job-meta">
+                    <span>PT Indofood Sukses Makmur</span>
+                    <span class="onsite-tag">On-site</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menangani pembukuan dan laporan keuangan perusahaan. Lulusan Akuntansi dengan pengalaman minimal 1 tahun.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Business Development</h3>
+                <div class="job-meta">
+                    <span>PT Bukalapak</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Mengembangkan peluang bisnis baru dan partnership strategis. Kemampuan negosiasi dan presentasi yang kuat.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Quality Control Inspector</h3>
+                <div class="job-meta">
+                    <span>PT Astra Honda Motor</span>
+                    <span class="onsite-tag">On-site</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Melakukan inspeksi kualitas produk manufaktur. Pengalaman di industri otomotif lebih diutamakan.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Content Writer</h3>
+                <div class="job-meta">
+                    <span>PT Kompas Gramedia</span>
+                    <span class="remote-tag">Remote</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menulis konten artikel untuk website dan media sosial. Kemampuan menulis yang baik dalam bahasa Indonesia dan Inggris.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Project Manager</h3>
+                <div class="job-meta">
+                    <span>PT Pertamina</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Memimpin proyek-proyek strategis perusahaan. Sertifikasi PMP dan pengalaman manajemen proyek minimal 3 tahun.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Admin Support</h3>
+                <div class="job-meta">
+                    <span>PT Bank Mandiri</span>
+                    <span class="onsite-tag">On-site</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menangani tugas-tugas administratif dan dokumentasi. Kemampuan menggunakan MS Office dengan baik.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Sales Engineer</h3>
+                <div class="job-meta">
+                    <span>PT Schneider Electric</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menjual produk teknis kepada klien industri. Background teknik dan kemampuan presentasi yang baik.</p>
+                <a href="https://id.jobstreet.com/id/sales-engineer-surabaya-jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Social Media Manager</h3>
+                <div class="job-meta">
+                    <span>PT Traveloka</span>
+                    <span class="remote-tag">Remote</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Mengelola akun media sosial perusahaan dan membuat strategi konten. Kreatif dan up-to-date dengan tren digital.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>IT Support</h3>
+                <div class="job-meta">
+                    <span>PT Indonesia Kaya</span>
+                    <span class="onsite-tag">On-site</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Memberikan dukungan teknis IT untuk seluruh karyawan. Pengalaman troubleshooting hardware dan software.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Product Manager</h3>
+                <div class="job-meta">
+                    <span>PT Grab Indonesia</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Mengembangkan strategi produk dan roadmap. Pengalaman product management dan analisis market research.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Warehouse Supervisor</h3>
+                <div class="job-meta">
+                    <span>PT JNE</span>
+                    <span class="onsite-tag">On-site</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Mengawasi operasional gudang dan distribusi barang. Pengalaman di bidang logistik minimal 2 tahun.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>Financial Analyst</h3>
+                <div class="job-meta">
+                    <span>PT Maybank Indonesia</span>
+                    <span class="hybrid-tag">Hybrid</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Menganalisis data keuangan dan membuat laporan untuk manajemen. Lulusan Finance dengan kemampuan analisis yang kuat.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+
+            <div class="job-card">
+                <h3>UX/UI Designer</h3>
+                <div class="job-meta">
+                    <span>PT OVO</span>
+                    <span class="remote-tag">Remote</span>
+                    <span>Full-Time</span>
+                </div>
+                <p class="job-description">Merancang pengalaman pengguna dan antarmuka aplikasi mobile. Portfolio yang kuat dan pengalaman dengan design tools.</p>
+                <a href="https://id.jobstreet.com/jobs" class="apply-btn">Lamar Sekarang</a>
+            </div>
+    </div>
+  </section>
+<div class="ft">
+  <!-- Kiri: logo dan info -->
+  <div class="ft-col">
+    <div class="logo">
+      <img src="logokerjaind.png" alt="Logo" class="logo-img">
+      <span class="logo-text">Kerja<span class="highlight">Ind</span></span>
+    </div>
+    <div>
+      <i>Platform pencarian kerja modern <br>untuk menghubungkan talenta dengan <br>perusahaan terbaik di Indonesia.</i>
+    </div>
+  </div>
+  <div class="ft-col">
+    <h4 class="ft-title">Navigasi</h4>
+      <ul class="nav-list">
+        <li><a href="index.html">Beranda</a></li>
+        <li><a href="find.html">Cari Loker</a></li>
+        <li><a href="gallery.html">Galeri Perusahaan</a></li>
+        <li><a href="profile.html">Profil Tim</a></li>
+      </ul>
+  </div>
+  
+  <div class="ft-col ft-right">
+    <div>
+    <div class="sosmed">
+      <h4 class="ft-title">Hubungi Kami</h4>
+      <i class="bi bi-geo-alt-fill"></i><span>  Jl. Cut Mutia, Bekasi</span>
+    </div>
+    <div class="sosmed">
+      <i class="bi bi-envelope-fill"></i><span>  info@kerjaind.id</span>
+    </div>
+    </div>
+    
+    <div>
+      <h4 class="ft-title">Sosial</h4>
+      <div class="sosmed">
+        <a href="https://www.facebook.com/?locale=id_ID"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/"><i class="bi bi-x"></i></a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://id.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <footer class="footer">
+    <p>&copy; 2025 KERJAIN. TUGAS AKHIR MATA KULIAH WEB PROGRAMMING I.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
